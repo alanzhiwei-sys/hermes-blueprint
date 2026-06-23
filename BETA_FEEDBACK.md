@@ -4,7 +4,7 @@
 
 Validate that Hermes Blueprint solves real problems for real people before commercial launch.
 
-The beta is no longer just testing whether the installer works. It is testing whether customers feel **guided after installation** and whether the 30-day path helps Hermes become personalized to their business.
+The beta is no longer just testing whether the installer works. It is testing whether customers feel **guided after installation**, whether the **setup path matches their confidence level**, and whether the **First Business Win wizard** helps them create a usable business artifact within 48 hours — before any sales conversation.
 
 ---
 
@@ -31,6 +31,8 @@ Be brutal if needed. The only bad feedback is silence.
 What to share:
 - What worked immediately
 - What was confusing
+- Whether the setup path matched your confidence level
+- Whether the First Business Win wizard helped you create a usable artifact
 - Whether the 30-day path made you feel guided
 - What Hermes still doesn't understand about your business
 - What almost made you quit
@@ -79,52 +81,64 @@ Place this in the product:
    - *Goal:* validate Day 0 / Day 1 / Day 7 / Day 14 / Day 30 structure
    - *If weak:* Ask which day felt unnecessary or missing.
 
-### Minute 7-10: First Use and Business Fit
+### Minute 7-10: First Business Win
 
-6. "What's the FIRST useful thing you tried to do after setup?"
+6. "Did you complete the First Business Win wizard and create an artifact?"
+   - *This is the core value test.*
+   - *If no:* "What stopped you — was it unclear what to pick, unclear how to use it, or not relevant to your business?"
+   - *If yes:* "What artifact did you choose and did you actually use it in real work?"
+
+7. "Did the First Business Win wizard make you feel there was immediate value, or did it feel like forced onboarding?"
+   - *Listen for:* whether they perceived the wizard as useful guidance or busywork.
+
+### Minute 10-13: First Use and Business Fit
+
+8. "What's the FIRST useful thing you tried to do after setup?"
    - *Reveals:* what they thought the product was for
    - *If they didn't know what to do first → onboarding gap still exists*
 
-7. "What worked immediately? What surprised you in a good way?"
+9. "What worked immediately? What surprised you in a good way?"
    - *Collect wins for the landing page.*
 
-8. "What did Hermes still not understand about your business?"
+10. "What did Hermes still not understand about your business?"
    - *This finds personalization gaps.*
    - *Ask for exact missing context, not vague impressions.*
 
-9. "Did any profile feel unnecessary, confusing, or overlapping?"
+11. "Did any profile feel unnecessary, confusing, or overlapping?"
    - *This tests whether 13 profiles feels valuable or overwhelming.*
 
-### Minute 10-13: Customer Objections
+### Minute 13-16: Customer Objections
 
 Ask these directly:
 
-10. "Honestly — do I need to become an IT person to use this?"
+12. "Did the setup path (DIY/Guided) match your confidence level? Would a different path have been better?"
+
+13. "Honestly — do I need to become an IT person to use this?"
     - *Listen for:* whether guide + path reduced intimidation.
 
-11. "What's the actual monthly running cost on top of the one-time fee?"
+14. "What's the actual monthly running cost on top of the one-time fee?"
     - *Did they understand LLM usage pricing?*
 
-12. "Can this actually generate documents/workflows for your industry, or do you spend 15 minutes fixing what the AI wrote?"
+15. "Can this actually generate documents/workflows for your industry, or do you spend 15 minutes fixing what the AI wrote?"
     - *Key metric:* time saved vs editing burden.
 
-13. "If you were recommending this to someone in your industry, what would you tell them?"
+16. "If you were recommending this to someone in your industry, what would you tell them?"
     - *Word-of-mouth potential. Capture their wording.*
 
-14. "What would make you NOT recommend this?"
+17. "What would make you NOT recommend this?"
     - *Hardest question. Ask it last. Don't let them dodge.*
 
-### Minute 13-15: The Money Question
+### Minute 16-18: The Money Question
 
-15. "If this were $149 one-time, would you pay for it today?"
+18. "If this were $149 one-time, would you pay for it today?"
     - *YES → "What made it worth it?"*
     - *NO → "What price would feel fair?"*
     - *MAYBE → "What would need to change for it to be a yes?"*
 
-16. "Would the Day 0 / Day 7 / Day 30 guided path make you more willing to pay compared to just an installer?"
-    - *This validates the new product positioning.*
+19. "Would the First Business Win wizard + 30-day guided path make you more willing to pay compared to just an installer?"
+    - *This validates the first-win activation model.*
 
-17. "What's ONE thing we could add that would make you pay double?"
+20. "What's ONE thing we could add that would make you pay double?"
     - *Reveals premium features they'd actually pay for.*
 
 ### Closing
@@ -146,11 +160,14 @@ Collect:
 | Beta signups | ≥ 10 | 0 |
 | Completed installs | ≥ 5 | 0 |
 | Completed personalization interviews | ≥ 5 | 0 |
+| Users who completed First Business Win wizard | ≥ 5 | 0 |
+| Users who created a usable artifact within 7 days | ≥ 3 | 0 |
 | Users who opened `SUCCESS_PATH.md` | ≥ 5 | 0 |
 | Users who completed Day 7 review | ≥ 3 | 0 |
 | Active users after 2 weeks | ≥ 3 | 0 |
 | Feedback interviews completed | ≥ 5 | 0 |
 | Unprompted "I would pay" | ≥ 1 | 0 |
+| Users who said setup path matched confidence | ≥ 4 | 0 |
 | Critical bugs unresolved | 0 | 0 |
 | Support hours/week | ≤ 5 | 0 |
 
@@ -178,12 +195,19 @@ Collect:
 ## Beta Offer
 
 **For the first 10 beta users:**
-- Kit tier at 50% off → $75 SGD instead of $149
-- In exchange for:
-  1. Install within 48 hours
-  2. Complete the personalization interview
-  3. Use the Day 0 to Day 7 path
-  4. One 15-minute feedback call using this script
+
+| Beta Path | Price (SGD) | What's Included |
+|---|---|---|
+| **DIY Beta Kit** | $49-99 (vs $149) | Self-install + First Business Win wizard + 30-day success path + all profiles/scripts/docs |
+| **Guided Beta** | $299-499 (vs $599) | Guided setup call + install verification + first-win selection + Day 7 review + 30-day support |
+| **Foundry Beta** | $799-999 (vs $999) | Done-with-you setup + 3 custom profiles + Day 30 ROI review + 90-day support (1 slot only) |
+
+In exchange for:
+1. Install within 48 hours
+2. Complete the personalization interview
+3. Use the First Business Win wizard
+4. Create one usable artifact within 7 days
+5. One 15-minute feedback call using this script
 
 **For everyone else during beta:**
 - Open-source core free on GitHub
@@ -196,9 +220,9 @@ Collect:
 
 The most important question is:
 
-> Did Hermes Blueprint feel like a guided AI business OS, or just a pile of scripts and profiles?
+> Did Hermes Blueprint help you create one usable business artifact? Did the setup path match your confidence? Did it feel like a guided AI workflow system, or just a pile of scripts and profiles?
 
-If users still feel "that's it?", the product is not ready.
+If users can't name one thing they created and used, the product is not ready.
 
 ---
 

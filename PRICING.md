@@ -13,10 +13,12 @@ Hermes Blueprint is priced as a **guided AI business OS**, not just a folder of 
 The value stack is:
 
 1. **Installer** — gets Hermes running
-2. **13 specialist profiles** — gives the customer an AI team
-3. **Personalization interview** — teaches Hermes the customer's business
-4. **30-day success path** — prevents the "that's it?" feeling after installation
-5. **Review loops** — Day 7 and Day 30 make value visible
+2. **Setup path** — DIY, Guided, or Done-With-You based on confidence level
+3. **13 specialist profiles** — gives the customer an AI team
+4. **Personalization interview** — teaches Hermes the customer's business
+5. **First Business Win** — creates one usable artifact within 48 hours
+6. **30-day success path** — prevents the "that's it?" feeling after installation
+7. **Review loops** — Day 7 and Day 30 make value visible
 
 ---
 
@@ -24,10 +26,10 @@ The value stack is:
 
 | Tier | Price (SGD) | What's Included | Onboarding Promise | Best For |
 |---|---:|---|---|---|
-| **Blueprint PDF** | **$79** | 80-page architecture guide covering: AI OS design, profile routing, vault/wiki structure, skill categories, cron hygiene, backup strategy, and 30-day personalization model. | Learn the blueprint and build your own version. | DIY builders who want the architecture, not the code |
-| **Blueprint Kit** | **$149** | PDF + all 13 profile templates + scripts (install, backup, restore, update, troubleshoot) + setup wizard + system health checker + personalization interview + 30-day success path. **Self-install — no support included.** | Self-guided Day 0 to Day 30 path. Customer always knows the next step. | Technical buyers who can `curl \| bash` on their own |
-| **Blueprint Pro** | **$599** | Everything in Kit + full installer walkthrough + 1-hour onboarding video call with Alan + `CUSTOMER_DOMAIN.md` pre-populated + Day 7 review + 30-day support. | Alan guides Day 0 setup and checks in at Day 7 so the customer does not stall. | Business owners who want guided deployment + initial customization |
-| **Blueprint Foundry** | **$999** | Everything in Pro + Alan customizes 3 profiles for their industry + 3 one-hour strategy sessions within 90 days + Day 30 ROI review + priority WhatsApp support for 90 days. | Alan runs the 30-day implementation loop with them and turns usage into business workflows. | Businesses who want a tailored AI OS, not off-the-shelf files |
+| **Blueprint PDF** | **$79** | 80-page architecture guide covering: AI OS design, profile routing, vault/wiki structure, skill categories, cron hygiene, backup strategy, first-win activation, and 30-day personalization model. | Learn the blueprint and build your own version. | DIY builders who want the architecture, not the code |
+| **Blueprint Kit** | **$149** | PDF + all 13 profile templates + scripts (install, backup, restore, update, troubleshoot) + setup wizard + system health checker + personalization interview + First Business Win wizard + 30-day success path. **Self-install — no support included.** | Self-guided Day 0 to Day 30 path. Customer creates one usable artifact within 48 hours. | Technical buyers who can `curl \| bash` on their own |
+| **Blueprint Pro** | **$599** | Everything in Kit + guided setup call with Alan + install verification + first-win selection + `CUSTOMER_DOMAIN.md` pre-populated + Day 7 review + 30-day support. | Alan guides Day 0 setup, verifies the system works, and helps customer create the first business artifact. | Business owners who want Hermes but do not want setup uncertainty |
+| **Blueprint Foundry** | **$999** | Everything in Pro + Alan customizes 3 profiles for their industry + 3 one-hour implementation sessions within 90 days + Day 30 ROI review + priority WhatsApp support for 90 days. | Alan runs the 30-day implementation loop and turns usage into real business workflows. | Businesses who want a tailored AI workflow system, not off-the-shelf files |
 
 ---
 
@@ -60,6 +62,10 @@ Do **not** sell it as:
 > "13 AI profiles and an installer."
 
 Sell it as:
+
+> "A guided AI workflow system that helps a small business turn one messy workflow into a usable AI-assisted system within 48 hours — then personalizes over 30 days."
+
+Secondary framing:
 
 > "A self-hosted AI business OS with 13 specialist profiles and a 30-day guided path to personalize it to your business."
 
@@ -97,16 +103,19 @@ Sell it as:
 
 For the first 10 beta users:
 
-- **Blueprint Kit:** $75 SGD instead of $149
+- **DIY Beta Kit:** $49-99 SGD instead of $149
+- **Guided Beta:** $299-499 SGD instead of $599
+- **Foundry Beta:** $799-999 SGD for one high-fit implementation user
 - In exchange for:
   1. Install within 48 hours
   2. Complete the personalization interview
-  3. Follow the Day 0 to Day 7 path
-  4. Complete one 15-minute feedback call
+  3. Use the First Business Win wizard
+  4. Create one usable artifact within 7 days
+  5. Complete one 15-minute feedback call
 
-Beta validation focuses on whether the install **and the onboarding path** make customers feel guided.
+Beta validation focuses on whether the install, setup path, and first-win flow make customers feel guided and commercially valuable.
 
 ---
 
 *Last updated: 23 June 2026*  
-*Version: 1.1 — proactive onboarding positioning*
+*Version: 1.2 — setup-path and first-win activation positioning*

@@ -31,6 +31,8 @@ Plus two adaptable profiles:
 
 ## Your First 15 Minutes
 
+> **Are you a non-technical user?** If terminal setup feels intimidating, choose the Guided Setup path instead. See [SETUP_OPTIONS.md](SETUP_OPTIONS.md). That path exists so you can focus on the business workflow without worrying about Linux or API details.
+
 ### 1. Set Up Your API Key (3 min)
 
 Your profiles need an AI provider. The easiest is OpenRouter — one key, many models.
@@ -90,6 +92,7 @@ This creates:
 |---|---|
 | `~/.hermes/blueprint/CUSTOMER_CONTEXT.md` | Your company, services, workflow, tools, tone, and approval boundaries |
 | `~/.hermes/blueprint/SUCCESS_PATH.md` | Day 0 / Day 1 / Day 3 / Day 7 / Day 14 / Day 30 action path |
+| `~/.hermes/blueprint/FIRST_WIN_PLAN.md` | Your selected first 48-hour business artifact plan |
 | `~/.hermes/blueprint/PROACTIVE_QUESTIONS.md` | Questions Hermes should ask gradually to become more useful |
 | `~/.hermes/blueprint/FIRST_PROMPTS.md` | Copy-paste prompts for your first week |
 
@@ -99,7 +102,28 @@ After the interview, run:
 hermes chat -q "Read my customer context at ~/.hermes/blueprint/CUSTOMER_CONTEXT.md. Ask me 5 high-value personalization questions, one at a time."
 ```
 
-### 5. Customize Your Domain (Optional, 3 min)
+### 5. First Business Win Wizard (5 min)
+
+The personalization interview captured your context. Now use the First Win wizard to pick one concrete artifact Hermes can help you build within 48 hours:
+
+```bash
+./scripts/first-win-wizard.sh
+```
+
+This asks you to choose from:
+
+- Sales follow-up sequence
+- Customer FAQ / response library
+- Weekly owner briefing
+- SOP / delivery checklist
+- Competitor / pricing research brief
+- Proposal / quote assistant
+
+Then generates `~/.hermes/blueprint/FIRST_WIN_PLAN.md` — your step-by-step 48-hour plan.
+
+This is the most important step. It proves Hermes Blueprint can produce a business asset you actually use.
+
+### 6. Customize Your Domain (Optional, 3 min)
 
 The Execution Engine and Growth Engine have a `CUSTOMER_DOMAIN.md` file. This is where you tell the AI about YOUR business if you want deeper industry adaptation.
 
@@ -120,7 +144,7 @@ Replace the placeholders with your actual business details:
 - **My workflow:** [BRIEF_DESCRIPTION]
 ```
 
-### 6. Set Up Backups (3 min)
+### 7. Set Up Backups (3 min)
 
 Test that backup works, then schedule it:
 

@@ -5,10 +5,10 @@
 ## SECTION 1: Hero
 
 **Headline:**
-# Your Business. An AI Team. A 30-Day Path.
+# Turn Messy Business Workflows Into AI-Assisted Systems
 
 **Subheadline:**
-13 AI specialists for projects, clients, research, content, finance, legal, and operations — installed on your own machine, then personalized through a guided 30-day success path so Hermes learns your actual business.
+13 AI specialists for projects, clients, research, content, finance, legal, and operations — installed on your own machine, then guided toward one usable business workflow within 48 hours and a 30-day personalization path.
 
 **Primary CTA Button:**
 [Request Beta Access →]
@@ -34,10 +34,11 @@ Hermes Blueprint is different. It gives you:
 - A ready-made AI business OS
 - 13 specialist profiles
 - A personalization interview
+- A First Business Win wizard
 - First prompts for your business
 - A Day 0 / Day 1 / Day 7 / Day 30 success path
 
-**Bottom line:** you don't just install Hermes. You teach it your business.
+**Bottom line:** you don't just install Hermes. You use it to create one real business asset first, then keep teaching it your business.
 
 ---
 
@@ -76,9 +77,9 @@ After setup, Hermes Blueprint creates your customer context and gives you a plan
 
 | When | What Happens | Outcome |
 |---|---|---|
-| **Day 0** | Personalization interview | Hermes learns your business, services, workflow, tools, tone, and approval boundaries |
+| **Day 0** | Personalization interview + First Business Win wizard | Hermes learns your business and picks one useful artifact to create first |
+| **48 hours** | First business artifact | You produce something usable: follow-up sequence, FAQ library, SOP, quote assistant, or briefing template |
 | **Day 1** | Workflow interview | Hermes turns one real workflow into a playbook |
-| **Day 3** | First SOP | You get one reusable process that saves time |
 | **Day 7** | Business review | Hermes reviews what worked, what failed, and what to improve next |
 | **Day 14** | Automation audit | Hermes identifies safe automations and what NOT to automate yet |
 | **Day 30** | ROI review | You measure time saved, workflows created, and whether to deepen usage |
@@ -90,19 +91,20 @@ After setup, Hermes Blueprint creates your customer context and gives you a plan
 ## SECTION 5: How It Works
 
 **Headline:**
-## From Install to Personalized AI OS
+## From Setup Path to First Workflow
 
 **4 steps:**
 
-1. **Run one command.** Copy-paste the installer into your Linux terminal.
-2. **Enter your API key.** Use OpenRouter or your preferred AI provider.
+1. **Choose your setup path.** DIY, Guided Setup, or Done-With-You.
+2. **Install and verify Hermes.** Add your API key and run the health check.
 3. **Answer the personalization interview.** Hermes captures your business context.
-4. **Follow the 30-day path.** Build workflows, review progress, and improve week by week.
+4. **Create your first business win.** Pick one workflow and generate a usable artifact within 48 hours.
 
 **What gets created:**
 
 - `CUSTOMER_CONTEXT.md` — your business profile
 - `SUCCESS_PATH.md` — your Day 0 to Day 30 roadmap
+- `FIRST_WIN_PLAN.md` — your first usable business artifact plan
 - `PROACTIVE_QUESTIONS.md` — what Hermes should ask over time
 - `FIRST_PROMPTS.md` — first prompts for strategy, ops, content, research, and finance
 
@@ -128,11 +130,11 @@ After setup, Hermes Blueprint creates your customer context and gives you a plan
 **Headline:**
 ## Choose Your Level of Guidance
 
-| Tier | Price (SGD) | Best For |
-|---|---|---|
-| **Blueprint Kit** | **$149** | Self-install + 30-day success path + all profiles/scripts/docs |
-| **Blueprint Pro** | **$599** | Kit + Alan-guided Day 0 setup + Day 7 review + 30-day support |
-| **Blueprint Foundry** | **$999** | Pro + 3 custom industry profiles + Day 30 ROI review + 90-day support |
+| Tier | Price (SGD) | What's Included | Best For |
+|---|---:|---|---|
+| **Blueprint Kit** | **$149** | Self-install + 30-day success path + all profiles/scripts/docs | Technical DIY |
+| **Blueprint Pro** | **$599** | Guided install + Day 0 first-win planning + Day 7 review + 30-day support | Most SME owners |
+| **Blueprint Foundry** | **$999** | Done-with-you setup + 3 custom profiles + Day 30 ROI review + 90-day support | Busy operators |
 
 **All tiers are one-time. No subscriptions. No recurring fees.**
 
@@ -146,7 +148,7 @@ You pay your own LLM costs (~$25-50 SGD/mo) directly to OpenRouter/Anthropic —
 A: Hermes runs a personalization interview, creates your customer context, and gives you a Day 0 / Day 1 / Day 7 / Day 14 / Day 30 path. You are not left staring at a blank prompt box.
 
 **Q: "I'm not technical. Can I use this?"**
-A: You need basic terminal comfort — copy-paste commands, edit a text file. If you've followed a Linux tutorial before, you're fine. If you've never opened a terminal, the Pro tier is the safer path.
+A: Yes, but choose Guided Setup. DIY needs terminal comfort. Guided Setup exists so business owners can focus on the workflow problem, not the Linux/API details.
 
 **Q: "Will it understand my business?"**
 A: Not magically on Day 0. The personalization path teaches Hermes your services, ideal customers, workflow, tools, tone, and approval boundaries. It gets better as you add real context.
@@ -171,12 +173,13 @@ A: Alan — a renovation project manager in Singapore. Built this for himself, u
 ## We're in Beta — Want In?
 
 **Copy:**
-The first 10 beta users get the Kit at 50% off ($75 SGD) in exchange for honest feedback on the install, personalization path, and first 2 weeks of usage.
+The first 10 beta users get discounted access in exchange for honest feedback on setup, personalization, and whether Hermes helps create one usable business workflow within 48 hours.
 
 What you commit to:
 - Install it within 48 hours
 - Complete the personalization interview
-- Use the Day 0 to Day 7 path
+- Use the First Business Win wizard
+- Create one usable artifact within 7 days
 - One 15-minute feedback call
 
 **CTA Button:**

@@ -9,10 +9,12 @@ Hermes Blueprint should not feel like "installation complete, good luck." The pr
 Every paid customer should leave setup with:
 
 1. A clear business context file Hermes can reference
-2. A 30-day success path
-3. First prompts for each major profile
-4. A backlog of questions Hermes should ask over time
-5. A Week 1 and Day 30 review loop
+2. A selected first business win
+3. A concrete 48-hour artifact plan
+4. A 30-day success path
+5. First prompts for each major profile
+6. A backlog of questions Hermes should ask over time
+7. A Week 1 and Day 30 review loop
 
 ## What the Installer Now Creates
 
@@ -40,6 +42,21 @@ This makes customers feel the product is just files and scripts.
 > "Install done. Now let's teach Hermes your business. Today we capture your context. Tomorrow we build your first workflow. In 7 days we review what worked. In 30 days we measure ROI."
 
 This makes the customer feel they bought a system, not a ZIP file.
+
+## First-Win Standard
+
+The first 48 hours decide whether the customer believes the product has value.
+
+A beta user must create at least one usable artifact, such as:
+
+- Sales follow-up sequence
+- Customer FAQ / response library
+- Weekly owner command briefing
+- SOP / delivery checklist
+- Competitor / pricing research brief
+- Proposal / quote assistant
+
+If they cannot name or use one artifact within 7 days, onboarding failed — even if installation succeeded.
 
 ## 30-Day Success Path
 
@@ -124,8 +141,8 @@ This path strengthens paid perceived value:
 
 | Tier | Onboarding Promise |
 |---|---|
-| Blueprint Kit | Self-guided 30-day success path |
-| Blueprint Pro | Alan walks them through Day 0 + Day 7 review |
-| Blueprint Foundry | Alan builds custom profiles + runs Day 30 ROI review |
+| Blueprint Kit | Self-guided 30-day success path + First Business Win wizard |
+| Blueprint Pro | Alan walks them through Day 0, verifies install, and helps choose the first business artifact |
+| Blueprint Foundry | Alan builds custom profiles + runs Day 30 ROI review around real business workflows |
 
 The buyer should feel there is a planned implementation journey, not just an installer.

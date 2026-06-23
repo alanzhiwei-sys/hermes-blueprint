@@ -1,6 +1,6 @@
 # Hermes Blueprint — Community Edition
 
-**Your own AI operating system for business.** Pre-configured, self-hosted, and guided by a 30-day personalization path.
+**Turn messy business workflows into AI-assisted systems in 30 days.** Self-hosted, pre-configured, and designed to produce your first usable business workflow within 48 hours.
 
 [![Beta](https://img.shields.io/badge/status-beta-yellow)](https://github.com/alanzhiwei-sys/hermes-blueprint)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
@@ -10,9 +10,9 @@
 
 ## What is Hermes Blueprint?
 
-A **pre-configured AI operating system** for small businesses. Install it on any Linux machine and get 13 AI specialists that handle your projects, clients, research, content, finances, legal, and operations — without hiring a team.
+A **guided AI workflow system** for small businesses. Install it on a Linux machine and get 13 AI specialists for projects, clients, research, content, finances, legal, and operations — then use the 30-day path to turn one messy workflow into a repeatable AI-assisted system.
 
-Unlike a generic chatbot or a folder of prompts, Blueprint includes a **30-day personalization path**. It captures your business context, creates first prompts, builds your first workflow, runs a Day 7 review, and helps you measure ROI at Day 30.
+Unlike a generic chatbot or a folder of prompts, Blueprint includes a **48-hour first-win flow** and a **30-day personalization path**. It captures your business context, helps you choose one first business artifact, builds your first workflow, runs a Day 7 review, and helps you measure ROI at Day 30.
 
 Built on [Hermes Agent](https://github.com/nousresearch/hermes-agent) (57K+ stars), the open-source AI agent framework.
 
@@ -39,6 +39,20 @@ Built on [Hermes Agent](https://github.com/nousresearch/hermes-agent) (57K+ star
 ---
 
 ## Quick Start
+
+### Setup Paths
+
+Not every buyer should use the same setup path.
+
+| Path | Best for | Promise |
+|---|---|---|
+| **DIY Setup** | Technical founders / AI hobbyists | Install yourself, follow the 30-day path, keep cost low |
+| **Guided Setup** | SME owners who want help | Alan installs with you, verifies it works, and helps choose the first business win |
+| **Done-With-You Setup** | Busy operators | Alan adapts Hermes around your industry and runs the implementation loop |
+
+If you are not technical, choose **Guided Setup**. You do not need to become a Linux person — you need one real business workflow Hermes can improve.
+
+See [SETUP_OPTIONS.md](SETUP_OPTIONS.md) for the full setup-path checklist.
 
 ### Prerequisites
 
@@ -80,6 +94,8 @@ blueprint/
 ├── USER_GUIDE.md                 # Full documentation
 ├── PRICING.md                    # Commercial tiers
 ├── DOMAIN_INTERVIEW.md           # Customization questions
+├── SETUP_OPTIONS.md              # DIY / Guided / Done-With-You setup paths
+├── FIRST_WIN_CATALOG.md          # First 48-hour business workflow examples
 ├── BETA_INVITE.md                # Private beta invite + qualification script
 ├── POSITIONING.md                # Product messaging and beta positioning
 ├── PROACTIVE_ONBOARDING.md        # 30-day personalization path
@@ -116,6 +132,7 @@ After setup, run:
 
 ```bash
 ./scripts/personalization-interview.sh
+./scripts/first-win-wizard.sh
 ```
 
 This creates:
@@ -124,23 +141,25 @@ This creates:
 |---|---|
 | `~/.hermes/blueprint/CUSTOMER_CONTEXT.md` | Captures your business, customers, workflow, tone, tools, and approval boundaries |
 | `~/.hermes/blueprint/SUCCESS_PATH.md` | Day 0 / Day 1 / Day 3 / Day 7 / Day 14 / Day 30 roadmap |
+| `~/.hermes/blueprint/FIRST_WIN_PLAN.md` | Chooses one usable business artifact to create within 48 hours |
 | `~/.hermes/blueprint/PROACTIVE_QUESTIONS.md` | Questions Hermes should gradually ask so it keeps learning your business |
 | `~/.hermes/blueprint/FIRST_PROMPTS.md` | Copy-paste prompts for strategy, ops, content, research, and finance |
 
-**The goal:** Hermes should keep asking useful questions, building playbooks, and reviewing progress after installation — not just sit there waiting for perfect prompts.
+**The goal:** Hermes should help create one useful business artifact first, then keep asking useful questions, building playbooks, and reviewing progress after installation — not just sit there waiting for perfect prompts.
 
-See [PROACTIVE_ONBOARDING.md](PROACTIVE_ONBOARDING.md) for the full 30-day path.
+See [FIRST_WIN_CATALOG.md](FIRST_WIN_CATALOG.md) for first workflow examples and [PROACTIVE_ONBOARDING.md](PROACTIVE_ONBOARDING.md) for the full 30-day path.
 
 ---
 
 ## Who This Is For
 
+✅ **Renovation / ID / service-business owners** who want sales, quote, follow-up, ops, and project workflows cleaned up first  
 ✅ **Solo business owners** who do everything themselves — PM, sales, ops, finance  
 ✅ **Small teams (2-10 people)** who need AI support but can't hire engineers  
 ✅ **Technical founders** who want an AI OS, not a SaaS subscription  
 ✅ **Singapore SMEs** — profiles include Singapore-specific tax, CPF, HDB, PDPA context  
 
-❌ **Not for:** People who've never used a terminal. You need basic Linux comfort.
+❌ **Not for:** People who want full automation without review, a polished SaaS app, or zero setup involvement. If you've never opened a terminal, choose Guided Setup instead of DIY.
 
 ---
 
@@ -190,7 +209,7 @@ If you install this and use it for 2+ weeks, I want to hear from you:
 ## FAQ
 
 **Q: Do I need to be technical?**
-A: You need basic terminal comfort (copy-paste commands, edit a text file). If you've ever followed a Linux tutorial, you're fine. If you've never opened a terminal, the Kit tier might be a better fit than DIY.
+A: DIY users need basic terminal comfort: copy-paste commands, add an API key, and follow docs. Non-technical business owners should choose Guided Setup — the goal is not to become technical, it is to get Hermes running and create the first useful workflow.
 
 **Q: What does it cost to run?**
 A: The software is free. You pay for LLM API usage — typically $25-50 SGD/month for a solo business owner using it daily. This goes to OpenRouter/Anthropic directly, not to us.
