@@ -1,6 +1,6 @@
 # Hermes Blueprint — Community Edition
 
-**Your own AI operating system for business.** Pre-configured. Self-installing. Open-source.
+**Your own AI operating system for business.** Pre-configured, self-hosted, and guided by a 30-day personalization path.
 
 [![Beta](https://img.shields.io/badge/status-beta-yellow)](https://github.com/alanzhiwei-sys/hermes-blueprint)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
@@ -11,6 +11,8 @@
 ## What is Hermes Blueprint?
 
 A **pre-configured AI operating system** for small businesses. Install it on any Linux machine and get 13 AI specialists that handle your projects, clients, research, content, finances, legal, and operations — without hiring a team.
+
+Unlike a generic chatbot or a folder of prompts, Blueprint includes a **30-day personalization path**. It captures your business context, creates first prompts, builds your first workflow, runs a Day 7 review, and helps you measure ROI at Day 30.
 
 Built on [Hermes Agent](https://github.com/nousresearch/hermes-agent) (57K+ stars), the open-source AI agent framework.
 
@@ -78,6 +80,7 @@ blueprint/
 ├── USER_GUIDE.md                 # Full documentation
 ├── PRICING.md                    # Commercial tiers
 ├── DOMAIN_INTERVIEW.md           # Customization questions
+├── POSITIONING.md                # Product messaging and beta positioning
 ├── PROACTIVE_ONBOARDING.md        # 30-day personalization path
 ├── scripts/
 │   ├── personalization-interview.sh # Customer context + success roadmap
@@ -146,10 +149,10 @@ See [PROACTIVE_ONBOARDING.md](PROACTIVE_ONBOARDING.md) for the full 30-day path.
 **Commercial tiers** (for businesses who want more):
 
 | Tier | Price (SGD) | What's extra |
-|---|---|---|
-| **Blueprint Kit** | $149 | Same as this repo + PDF guide + priority updates |
-| **Blueprint Pro** | $599 | Kit + 1hr onboarding call + custom domain setup + 30-day support |
-| **Blueprint Foundry** | $999 | Pro + 3 custom industry profiles + 3 strategy sessions + 90-day support |
+|---|---:|---|
+| **Blueprint Kit** | $149 | Self-install + 13 profiles + scripts + personalization interview + 30-day success path |
+| **Blueprint Pro** | $599 | Kit + Alan-guided Day 0 setup + Day 7 review + 30-day support |
+| **Blueprint Foundry** | $999 | Pro + 3 custom industry profiles + Day 30 ROI review + 90-day support |
 
 See [PRICING.md](PRICING.md) for details.
 
