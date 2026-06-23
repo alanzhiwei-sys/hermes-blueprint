@@ -16,12 +16,13 @@ Every paid customer should leave setup with:
 
 ## What the Installer Now Creates
 
-Running `./scripts/personalization-interview.sh` creates:
+Running `./scripts/personalization-interview.sh` and `./scripts/first-win-wizard.sh` creates:
 
 | File | Purpose |
 |---|---|
 | `~/.hermes/blueprint/CUSTOMER_CONTEXT.md` | Customer's business identity, services, workflow, tools, tone, boundaries |
 | `~/.hermes/blueprint/SUCCESS_PATH.md` | Day 0 / Day 1 / Day 3 / Day 7 / Day 14 / Day 30 roadmap |
+| `~/.hermes/blueprint/FIRST_WIN_PLAN.md` | One concrete business artifact to create within 48 hours |
 | `~/.hermes/blueprint/PROACTIVE_QUESTIONS.md` | Questions Hermes should gradually ask to become more personalized |
 | `~/.hermes/blueprint/FIRST_PROMPTS.md` | Copy-paste prompts for strategy, ops, content, research, finance |
 | `~/.hermes/profiles/*/vault/wiki/customer-context.md` | Shared customer context copied into each installed profile vault |

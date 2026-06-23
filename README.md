@@ -80,10 +80,12 @@ blueprint/
 ├── USER_GUIDE.md                 # Full documentation
 ├── PRICING.md                    # Commercial tiers
 ├── DOMAIN_INTERVIEW.md           # Customization questions
+├── BETA_INVITE.md                # Private beta invite + qualification script
 ├── POSITIONING.md                # Product messaging and beta positioning
 ├── PROACTIVE_ONBOARDING.md        # 30-day personalization path
 ├── scripts/
 │   ├── personalization-interview.sh # Customer context + success roadmap
+│   ├── first-win-wizard.sh       # First useful business artifact plan
 │   ├── backup.sh                 # Portable backup
 │   ├── restore.sh                # Full restore
 │   ├── update.sh                 # Safe updates (preserves your configs)

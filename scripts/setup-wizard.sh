@@ -377,7 +377,9 @@ finish() {
     say ""
     say "  4. Complete personalization / review your success path:"
     say "     ${BLUE}./scripts/personalization-interview.sh${NC}"
+    say "     ${BLUE}./scripts/first-win-wizard.sh${NC}"
     say "     ${BLUE}~/.hermes/blueprint/SUCCESS_PATH.md${NC}"
+    say "     ${BLUE}~/.hermes/blueprint/FIRST_WIN_PLAN.md${NC}"
     say ""
     
     if $DRY_RUN; then
