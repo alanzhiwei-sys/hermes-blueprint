@@ -52,6 +52,8 @@ curl -fsSL https://raw.githubusercontent.com/alanzhiwei-sys/hermes-blueprint/mai
 
 This installs Hermes Agent + all 13 profile templates + setup wizard + scripts.
 
+After installation, Blueprint does **not** stop at "done." It runs a proactive personalization path that teaches Hermes your business and creates your 30-day success roadmap.
+
 ### First Run
 
 ```bash
@@ -76,7 +78,9 @@ blueprint/
 ├── USER_GUIDE.md                 # Full documentation
 ├── PRICING.md                    # Commercial tiers
 ├── DOMAIN_INTERVIEW.md           # Customization questions
+├── PROACTIVE_ONBOARDING.md        # 30-day personalization path
 ├── scripts/
+│   ├── personalization-interview.sh # Customer context + success roadmap
 │   ├── backup.sh                 # Portable backup
 │   ├── restore.sh                # Full restore
 │   ├── update.sh                 # Safe updates (preserves your configs)
@@ -96,6 +100,31 @@ blueprint/
     ├── zeus-project-manager/     # Adaptable PM (any industry)
     └── hera-business-ops/        # Adaptable business ops (any industry)
 ```
+
+---
+
+## Proactive Personalization Path
+
+Blueprint is designed to avoid the "that's it?" problem after installation.
+
+After setup, run:
+
+```bash
+./scripts/personalization-interview.sh
+```
+
+This creates:
+
+| File | What it does |
+|---|---|
+| `~/.hermes/blueprint/CUSTOMER_CONTEXT.md` | Captures your business, customers, workflow, tone, tools, and approval boundaries |
+| `~/.hermes/blueprint/SUCCESS_PATH.md` | Day 0 / Day 1 / Day 3 / Day 7 / Day 14 / Day 30 roadmap |
+| `~/.hermes/blueprint/PROACTIVE_QUESTIONS.md` | Questions Hermes should gradually ask so it keeps learning your business |
+| `~/.hermes/blueprint/FIRST_PROMPTS.md` | Copy-paste prompts for strategy, ops, content, research, and finance |
+
+**The goal:** Hermes should keep asking useful questions, building playbooks, and reviewing progress after installation — not just sit there waiting for perfect prompts.
+
+See [PROACTIVE_ONBOARDING.md](PROACTIVE_ONBOARDING.md) for the full 30-day path.
 
 ---
 

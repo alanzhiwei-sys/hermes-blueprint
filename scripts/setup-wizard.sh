@@ -329,10 +329,37 @@ yaml.dump(cfg, open('$CONFIG_FILE', 'w'), default_flow_style=False)
     fi
 }
 
+# ── Proactive Personalization ────────────────────────────────────────
+
+run_personalization_path() {
+    section "5. Personalization Success Path"
+
+    local personalization_script="$SCRIPT_DIR/personalization-interview.sh"
+
+    say "Installation gives you profiles. Personalization makes them feel like YOUR AI team."
+    say "This creates your customer context, 30-day roadmap, and first prompts."
+    say ""
+
+    if [ ! -f "$personalization_script" ]; then
+        say "  ${YELLOW}⚠️${NC} Personalization script not found — skipping"
+        return
+    fi
+
+    if confirm "Run the 10-minute personalization interview now?"; then
+        if [ "$DRY_RUN" = true ]; then
+            bash "$personalization_script" --dry-run
+        else
+            bash "$personalization_script"
+        fi
+    else
+        say "  ${YELLOW}⚠️${NC} Skipped. Run later: ./scripts/personalization-interview.sh"
+    fi
+}
+
 # ── Finish ────────────────────────────────────────────────────────────
 
 finish() {
-    section "5. All Done!"
+    section "6. All Done!"
     
     say ""
     say "${BOLD}🎉 Your Hermes Blueprint is ready!${NC}"
@@ -348,8 +375,9 @@ finish() {
     say "  3. Start using Zeus:"
     say "     ${BLUE}hermes profile switch zeus-project-manager${NC}"
     say ""
-    say "  4. Apply memory policy (recommended):"
-    say "     ${BLUE}./scripts/memory-policy-apply.sh${NC}"
+    say "  4. Complete personalization / review your success path:"
+    say "     ${BLUE}./scripts/personalization-interview.sh${NC}"
+    say "     ${BLUE}~/.hermes/blueprint/SUCCESS_PATH.md${NC}"
     say ""
     
     if $DRY_RUN; then
@@ -392,6 +420,7 @@ main() {
     fi
     
     apply_provider_config
+    run_personalization_path
     finish
 }
 

@@ -71,6 +71,12 @@ warn()    { say "${YELLOW}⚠️${NC} $1"; }
 error()   { say "${RED}❌${NC} $1"; }
 info()    { say "${BLUE}ℹ️${NC} $1"; }
 header()  { say "\n${BOLD}$1${NC}"; }
+confirm() {
+    local prompt="$1"
+    local response
+    read -rp "$(echo -e "${BLUE}→${NC} $prompt [y/N]: ")" response
+    [[ "$response" =~ ^[Yy] ]]
+}
 
 # ── Prerequisites ───────────────────────────────────────────────────
 
@@ -280,7 +286,11 @@ print_summary() {
     say "      hermes profile list"
     say "      ./health/system-health.sh"
     say ""
-    say "   4. Start using your AI business partner:"
+    say "   4. Complete personalization so Hermes knows your business:"
+    say "      ./scripts/personalization-interview.sh"
+    say "      Then open: ~/.hermes/blueprint/SUCCESS_PATH.md"
+    say ""
+    say "   5. Start using your AI business partner:"
     say "      hermes profile switch zeus-project-manager"
     say ""
     if $DRY_RUN; then
@@ -317,7 +327,22 @@ main() {
         run_health_check
     fi
     
-    # Phase 6: Summary
+    # Phase 6: Proactive personalization path
+    if ! $DRY_RUN; then
+        local personalization_script="$SCRIPT_DIR/scripts/personalization-interview.sh"
+        if [ -f "$personalization_script" ]; then
+            header "🧭 Personalization Success Path"
+            say "Installation is the engine. Personalization is what makes it worth paying for."
+            say ""
+            if confirm "Run the 10-minute personalization interview now?"; then
+                bash "$personalization_script"
+            else
+                warn "Skipped for now. Run later: ./scripts/personalization-interview.sh"
+            fi
+        fi
+    fi
+    
+    # Phase 7: Summary
     print_summary
 }
 

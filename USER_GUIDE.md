@@ -76,9 +76,32 @@ hermes --profile apollo-content chat -q "Write a LinkedIn post about using AI in
 hermes --profile athena-researcher chat -q "What are the top 3 trends in Singapore SME digitalization in 2026?"
 ```
 
-### 4. Customize Your Domain (3 min)
+### 4. Run Personalization Interview (10 min)
 
-The Execution Engine and Growth Engine have a `CUSTOMER_DOMAIN.md` file. This is where you tell the AI about YOUR business.
+Installation gives you the engine. Personalization teaches Hermes YOUR business so it does not feel like "that's it?" after setup.
+
+```bash
+./scripts/personalization-interview.sh
+```
+
+This creates:
+
+| File | Purpose |
+|---|---|
+| `~/.hermes/blueprint/CUSTOMER_CONTEXT.md` | Your company, services, workflow, tools, tone, and approval boundaries |
+| `~/.hermes/blueprint/SUCCESS_PATH.md` | Day 0 / Day 1 / Day 3 / Day 7 / Day 14 / Day 30 action path |
+| `~/.hermes/blueprint/PROACTIVE_QUESTIONS.md` | Questions Hermes should ask gradually to become more useful |
+| `~/.hermes/blueprint/FIRST_PROMPTS.md` | Copy-paste prompts for your first week |
+
+After the interview, run:
+
+```bash
+hermes chat -q "Read my customer context at ~/.hermes/blueprint/CUSTOMER_CONTEXT.md. Ask me 5 high-value personalization questions, one at a time."
+```
+
+### 5. Customize Your Domain (Optional, 3 min)
+
+The Execution Engine and Growth Engine have a `CUSTOMER_DOMAIN.md` file. This is where you tell the AI about YOUR business if you want deeper industry adaptation.
 
 ```bash
 # Edit the domain file
@@ -97,7 +120,7 @@ Replace the placeholders with your actual business details:
 - **My workflow:** [BRIEF_DESCRIPTION]
 ```
 
-### 5. Set Up Backups (3 min)
+### 6. Set Up Backups (3 min)
 
 Test that backup works, then schedule it:
 
