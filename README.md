@@ -1,0 +1,189 @@
+# Hermes Blueprint — Community Edition
+
+**Your own AI operating system for business.** Pre-configured. Self-installing. Open-source.
+
+[![Beta](https://img.shields.io/badge/status-beta-yellow)](https://github.com/alanzhiwei-sys/hermes-blueprint)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Hermes Agent](https://img.shields.io/badge/powered%20by-Hermes%20Agent-purple)](https://github.com/nousresearch/hermes-agent)
+
+---
+
+## What is Hermes Blueprint?
+
+A **pre-configured AI operating system** for small businesses. Install it on any Linux machine and get 13 AI specialists that handle your projects, clients, research, content, finances, legal, and operations — without hiring a team.
+
+Built on [Hermes Agent](https://github.com/nousresearch/hermes-agent) (57K+ stars), the open-source AI agent framework.
+
+---
+
+## What You Get
+
+| Profile | What it does |
+|---|---|
+| **Zeus** | Project management — quotes, timelines, subcontractors, client communication |
+| **Hera** | Business operations — service packages, pricing, installer briefing |
+| **Hephaestus** | Strategic advisor — "should I" decisions, investments, tools, strategy |
+| **Aphrodite** | Relationship coach — work-life balance, communication, wellness |
+| **Apollo** | Content & branding — social media, marketing copy, brand voice |
+| **Artemis** | Coder & architect — code review, debugging, tool evaluation |
+| **Athena** | Researcher — market research, competitor analysis, deep dives |
+| **Poseidon** | Operations — automation, backups, system health, cron jobs |
+| **Hestia** | Finance — tax (SG), CPF, cash flow, profit margins |
+| **Themis** | Legal — contracts, PDPA compliance, disputes |
+| **Ares** | Adversary sim — negotiation practice, pitch stress-testing |
+
+**13 profiles. One install. Your business runs smarter.**
+
+---
+
+## Quick Start
+
+### Prerequisites
+
+- Linux machine (Ubuntu 22.04+ recommended, 16GB+ RAM)
+- OpenRouter or Anthropic API key ([free signup](https://openrouter.ai/keys))
+- Basic terminal comfort (you can copy-paste commands)
+
+### Install
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/alanzhiwei-sys/hermes-blueprint/main/install.sh | bash
+```
+
+This installs Hermes Agent + all 13 profile templates + setup wizard + scripts.
+
+### First Run
+
+```bash
+# Set your API key
+hermes config set model.api_key "sk-or-your-key-here"
+
+# Ask your first question
+hermes chat -q "What's on my calendar today?"
+
+# Meet your team
+hermes --profile hephaestus-assistant chat -q "Should I invest in marketing or tools first?"
+```
+
+---
+
+## What's in the Box
+
+```
+blueprint/
+├── install.sh                    # One-command installer
+├── setup-wizard.sh               # Interactive onboarding
+├── USER_GUIDE.md                 # Full documentation
+├── PRICING.md                    # Commercial tiers
+├── DOMAIN_INTERVIEW.md           # Customization questions
+├── scripts/
+│   ├── backup.sh                 # Portable backup
+│   ├── restore.sh                # Full restore
+│   ├── update.sh                 # Safe updates (preserves your configs)
+│   └── troubleshoot.sh           # Health diagnostics
+└── templates/profiles/           # 13 AI profile templates
+    ├── zeus-renovation/          # Project manager
+    ├── hera-smarthush/           # Business operations
+    ├── hephaestus-assistant/     # Strategic advisor
+    ├── aphrodite-relationship/   # Relationship coach
+    ├── apollo-content/           # Content & branding
+    ├── artemis-coder/            # Coder & architect
+    ├── athena-researcher/        # Researcher
+    ├── poseidon-operations/      # Operations
+    ├── hestia-finance/           # Finance (Singapore)
+    ├── themis-legal/             # Legal advisor
+    ├── ares-adversary/           # Adversary simulator
+    ├── zeus-project-manager/     # Adaptable PM (any industry)
+    └── hera-business-ops/        # Adaptable business ops (any industry)
+```
+
+---
+
+## Who This Is For
+
+✅ **Solo business owners** who do everything themselves — PM, sales, ops, finance  
+✅ **Small teams (2-10 people)** who need AI support but can't hire engineers  
+✅ **Technical founders** who want an AI OS, not a SaaS subscription  
+✅ **Singapore SMEs** — profiles include Singapore-specific tax, CPF, HDB, PDPA context  
+
+❌ **Not for:** People who've never used a terminal. You need basic Linux comfort.
+
+---
+
+## Pricing
+
+**This repo is free and open-source (MIT).** You can install everything and use it forever at no cost beyond your LLM API fees (~$25-50 SGD/mo).
+
+**Commercial tiers** (for businesses who want more):
+
+| Tier | Price (SGD) | What's extra |
+|---|---|---|
+| **Blueprint Kit** | $149 | Same as this repo + PDF guide + priority updates |
+| **Blueprint Pro** | $599 | Kit + 1hr onboarding call + custom domain setup + 30-day support |
+| **Blueprint Foundry** | $999 | Pro + 3 custom industry profiles + 3 strategy sessions + 90-day support |
+
+See [PRICING.md](PRICING.md) for details.
+
+---
+
+## Customizing for Your Business
+
+Two profiles are **adaptable** to any industry:
+
+- `zeus-project-manager` → rename to whatever you do (e.g., "construction-pm", "event-planner")
+- `hera-business-ops` → rename to your service business
+
+Edit `CUSTOMER_DOMAIN.md` in each profile to tell the AI about YOUR business, YOUR tools, and YOUR workflow.
+
+See [DOMAIN_INTERVIEW.md](DOMAIN_INTERVIEW.md) for the guided questionnaire.
+
+---
+
+## Beta Program
+
+**Status:** 🟡 Beta — seeking 5-10 early users for feedback
+
+If you install this and use it for 2+ weeks, I want to hear from you:
+- What worked immediately?
+- What was confusing?
+- What's missing?
+
+→ [Request Beta Access](https://github.com/alanzhiwei-sys/hermes-blueprint/discussions) (GitHub Discussions)
+→ Or DM me on Telegram
+
+---
+
+## FAQ
+
+**Q: Do I need to be technical?**
+A: You need basic terminal comfort (copy-paste commands, edit a text file). If you've ever followed a Linux tutorial, you're fine. If you've never opened a terminal, the Kit tier might be a better fit than DIY.
+
+**Q: What does it cost to run?**
+A: The software is free. You pay for LLM API usage — typically $25-50 SGD/month for a solo business owner using it daily. This goes to OpenRouter/Anthropic directly, not to us.
+
+**Q: Can I run this on macOS/Windows?**
+A: Linux only for now. macOS via Docker (instructions coming). Windows via WSL (untested).
+
+**Q: Is my data private?**
+A: Everything runs on YOUR machine. Your emails, client data, project files — none of it goes to us. The only external call is to the LLM API (OpenRouter/Anthropic) for AI responses.
+
+**Q: Who built this?**
+A: Alan — a renovation project manager in Singapore who built this for himself, used it daily for 6+ months, and is now sharing it. Not a VC-backed startup. Not a SaaS company. One person who built the tool he wished existed.
+
+---
+
+## Contributing
+
+Found a bug? Have a feature idea? [Open an issue](https://github.com/alanzhiwei-sys/hermes-blueprint/issues).
+
+Want to add a profile for your industry? PRs welcome.
+
+---
+
+## License
+
+MIT — free for personal and commercial use. Built on [Hermes Agent](https://github.com/nousresearch/hermes-agent) (also open-source).
+
+---
+
+*Built with ❤️ in Singapore by someone who just wanted AI to handle the boring stuff.*

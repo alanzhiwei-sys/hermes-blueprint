@@ -1,0 +1,11 @@
+.DS_Store
+*.swp
+*.swo
+*.tar.gz
+.env
+*.key
+*.pem
+auth.json
+state.db*
+cache/
+__pycache__/
